@@ -12,9 +12,11 @@ metadata:
     kubernetes.io/ingress.allow-http: "false"
     kubernetes.io/ingress.class: gce
     networking.gke.io/managed-certificates: hiedu-certificate
+  labels:
+    argocd.argoproj.io/instance: hiedu-argo
   creationTimestamp: "2025-05-24T16:05:42Z"
   finalizers:
-  - networking.gke.io/ingress-finalizer-V2
+    - networking.gke.io/ingress-finalizer-V2
   generation: 3
   name: hiedu-ingress
   namespace: default
@@ -27,17 +29,17 @@ spec:
       port:
         number: 80
   rules:
-  - host: hiedu.site
-    http:
-      paths:
-      - backend:
-          service:
-            name: hiedu-k8s-deployment-z9s9r
-            port:
-              number: 80
-        path: /
-        pathType: Prefix
+    - host: hiedu.site
+      http:
+        paths:
+          - backend:
+              service:
+                name: hiedu-k8s-deployment-z9s9r
+                port:
+                  number: 80
+            path: /
+            pathType: Prefix
 status:
   loadBalancer:
     ingress:
-    - ip: 34.117.107.180
+      - ip: 34.117.107.180

@@ -7,9 +7,10 @@ metadata:
     cloud.google.com/neg-status: '{"network_endpoint_groups":{"80":"k8s1-a3481635-default-hiedu-k8s-deployment-z9s9r-80-a8101ed0"},"zones":["asia-northeast3-b","asia-northeast3-c"]}'
   creationTimestamp: "2025-05-24T15:25:46Z"
   finalizers:
-  - service.kubernetes.io/load-balancer-cleanup
+    - service.kubernetes.io/load-balancer-cleanup
   generateName: hiedu-k8s-deployment-
   labels:
+    argocd.argoproj.io/instance: hiedu-argo
     app: hiedu-k8s-deployment
     app.kubernetes.io/managed-by: cloud-console
   name: hiedu-k8s-deployment-z9s9r
@@ -20,17 +21,17 @@ spec:
   allocateLoadBalancerNodePorts: true
   clusterIP: 34.118.235.45
   clusterIPs:
-  - 34.118.235.45
+    - 34.118.235.45
   externalTrafficPolicy: Cluster
   internalTrafficPolicy: Cluster
   ipFamilies:
-  - IPv4
+    - IPv4
   ipFamilyPolicy: SingleStack
   ports:
-  - nodePort: 32756
-    port: 80
-    protocol: TCP
-    targetPort: 3000
+    - nodePort: 32756
+      port: 80
+      protocol: TCP
+      targetPort: 3000
   selector:
     app: hiedu-k8s-deployment
     app.kubernetes.io/managed-by: cloud-console
@@ -39,5 +40,5 @@ spec:
 status:
   loadBalancer:
     ingress:
-    - ip: 34.22.94.74
-      ipMode: VIP
+      - ip: 34.22.94.74
+        ipMode: VIP
