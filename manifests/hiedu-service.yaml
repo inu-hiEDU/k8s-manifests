@@ -5,8 +5,6 @@ metadata:
     beta.cloud.google.com/backend-config: '{"default": "hiedu-backend-config"}'
     cloud.google.com/neg: '{"ingress":true}'
   creationTimestamp: "2025-05-24T15:25:46Z"
-  finalizers:
-    - service.kubernetes.io/load-balancer-cleanup
   name: hiedu-k8s-service
   labels:
     argocd.argoproj.io/instance: hiedu-argo
@@ -14,8 +12,6 @@ metadata:
     app.kubernetes.io/managed-by: cloud-console
   namespace: default
 spec:
-  allocateLoadBalancerNodePorts: true
-  externalTrafficPolicy: Cluster
   internalTrafficPolicy: Cluster
   ipFamilies:
     - IPv4
