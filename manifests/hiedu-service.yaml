@@ -28,4 +28,4 @@ spec:
     app: hiedu-k8s-deployment
     app.kubernetes.io/managed-by: cloud-console
   sessionAffinity: None
-  type: LoadBalancer
+  type: ClusterIP
