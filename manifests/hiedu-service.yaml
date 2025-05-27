@@ -8,12 +8,11 @@ metadata:
   creationTimestamp: "2025-05-24T15:25:46Z"
   finalizers:
     - service.kubernetes.io/load-balancer-cleanup
-  generateName: hiedu-k8s-deployment-
+  name: hiedu-k8s-service
   labels:
     argocd.argoproj.io/instance: hiedu-argo
     app: hiedu-k8s-deployment
     app.kubernetes.io/managed-by: cloud-console
-  name: hiedu-k8s-deployment-z9s9r
   namespace: default
 spec:
   allocateLoadBalancerNodePorts: true
@@ -26,8 +25,7 @@ spec:
     - IPv4
   ipFamilyPolicy: SingleStack
   ports:
-    - nodePort: 32756
-      port: 80
+    - port: 80
       protocol: TCP
       targetPort: 3000
   selector:
@@ -35,8 +33,3 @@ spec:
     app.kubernetes.io/managed-by: cloud-console
   sessionAffinity: None
   type: LoadBalancer
-status:
-  loadBalancer:
-    ingress:
-      - ip: 34.22.94.74
-        ipMode: VIP
