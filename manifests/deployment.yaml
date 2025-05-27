@@ -4,17 +4,12 @@ metadata:
   annotations:
     autopilot.gke.io/resource-adjustment: '{"input":{"containers":[{"name":"hiedu-sha256-1"}]},"output":{"containers":[{"limits":{"ephemeral-storage":"1Gi"},"requests":{"cpu":"500m","ephemeral-storage":"1Gi","memory":"2Gi"},"name":"hiedu-sha256-1"}]},"computeClassAtAdmission":"Default","modified":true}'
     autopilot.gke.io/warden-version: 32.15.0-gke.8
-    deployment.kubernetes.io/revision: "1"
-  creationTimestamp: "2025-05-13T16:04:21Z"
-  generation: 8
   labels:
     argocd.argoproj.io/instance: hiedu-argo
     app: hiedu-k8s-deployment
     app.kubernetes.io/managed-by: cloud-console
   name: hiedu-k8s-deployment
   namespace: default
-  resourceVersion: "1747510082360671015"
-  uid: 1cf91a26-7e83-43b9-ac71-b456f06f6c57
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
