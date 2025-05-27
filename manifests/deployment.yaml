@@ -117,7 +117,7 @@ spec:
                 configMapKeyRef:
                   key: GOOGLE_FAIL
                   name: hiedu-k8s-deployment-config-dci7
-          image: asia.gcr.io/core-computer-459306-v6/hiedu@sha256:b9dde41328cd114499585a858f935570a459cd05d255fb679c55cec3d4323646
+          image: yuripbong3/hiedu:1.2.3
           imagePullPolicy: IfNotPresent
           name: hiedu-sha256-1
           resources:
