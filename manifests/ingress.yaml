@@ -17,11 +17,8 @@ metadata:
   creationTimestamp: "2025-05-24T16:05:42Z"
   finalizers:
     - networking.gke.io/ingress-finalizer-V2
-  generation: 3
   name: hiedu-ingress
   namespace: default
-  resourceVersion: "1748107000303279009"
-  uid: 189b909e-11f4-4780-bcc9-cd7f832be8d0
 spec:
   defaultBackend:
     service:

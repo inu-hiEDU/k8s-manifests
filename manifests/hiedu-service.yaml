@@ -15,8 +15,6 @@ metadata:
     app.kubernetes.io/managed-by: cloud-console
   name: hiedu-k8s-deployment-z9s9r
   namespace: default
-  resourceVersion: "1748269541342287003"
-  uid: 5c4e1f73-6a92-475c-b08f-43f835af4d77
 spec:
   allocateLoadBalancerNodePorts: true
   clusterIP: 34.118.235.45
