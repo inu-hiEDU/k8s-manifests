@@ -9,7 +9,7 @@ metadata:
     ingress.kubernetes.io/https-target-proxy: k8s2-ts-7xdr9v6b-default-hiedu-ingress-4bq85xqh
     ingress.kubernetes.io/ssl-cert: mcrt-506d2643-c6d0-4cdb-85c0-f4af9d397a47
     ingress.kubernetes.io/url-map: k8s2-um-7xdr9v6b-default-hiedu-ingress-4bq85xqh
-    kubernetes.io/ingress.allow-http: "false"
+    kubernetes.io/ingress.allow-http: "true"
     kubernetes.io/ingress.class: gce
     networking.gke.io/managed-certificates: hiedu-certificate
   labels:
