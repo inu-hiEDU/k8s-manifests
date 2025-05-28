@@ -3,12 +3,6 @@ kind: Ingress
 metadata:
   annotations:
     beta.cloud.google.com/backend-config: '{"default": "hiedu-backend-config"}'
-    ingress.gcp.kubernetes.io/pre-shared-cert: mcrt-506d2643-c6d0-4cdb-85c0-f4af9d397a47
-    ingress.kubernetes.io/backends: '{"k8s1-a3481635-default-hiedu-k8s-service-80-b9a3109a":"HEALTHY"}'
-    ingress.kubernetes.io/https-forwarding-rule: k8s2-fs-7xdr9v6b-default-hiedu-ingress-4bq85xqh
-    ingress.kubernetes.io/https-target-proxy: k8s2-ts-7xdr9v6b-default-hiedu-ingress-4bq85xqh
-    ingress.kubernetes.io/ssl-cert: mcrt-506d2643-c6d0-4cdb-85c0-f4af9d397a47
-    ingress.kubernetes.io/url-map: k8s2-um-7xdr9v6b-default-hiedu-ingress-4bq85xqh
     kubernetes.io/ingress.allow-http: "true"
     kubernetes.io/ingress.class: gce
     networking.gke.io/managed-certificates: hiedu-certificate
