@@ -22,7 +22,7 @@ metadata:
 spec:
   defaultBackend:
     service:
-      name: hiedu-k8s-deployment-z9s9r
+      name: hiedu-k8s-service
       port:
         number: 80
   rules:
@@ -31,7 +31,7 @@ spec:
         paths:
           - backend:
               service:
-                name: hiedu-k8s-deployment-z9s9r
+                name: hiedu-k8s-service
                 port:
                   number: 80
             path: /
