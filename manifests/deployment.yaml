@@ -117,7 +117,7 @@ spec:
                 configMapKeyRef:
                   key: GOOGLE_FAIL
                   name: hiedu-k8s-deployment-config-dci7
-          image: yuripbong3/hiedu:0.103.79-pre-dev
+          image: yuripbong3/hiedu:0.103.80-pre-dev
           imagePullPolicy: IfNotPresent
           name: hiedu-sha256-1
           resources:
