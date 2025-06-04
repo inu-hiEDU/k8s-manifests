@@ -62,10 +62,20 @@ spec:
                 configMapKeyRef:
                   key: TZ
                   name: hiedu-k8s-deployment-config-dci7
-            - name: DB_HOST
+            - name: DB_HOST_PRIMARY
               valueFrom:
                 configMapKeyRef:
-                  key: DB_HOST
+                  key: DB_HOST_PRIMARY
+                  name: hiedu-k8s-deployment-config-dci7
+            - name: DB_HOST_REPLICA1
+              valueFrom:
+                configMapKeyRef:
+                  key: DB_HOST_REPLICA1
+                  name: hiedu-k8s-deployment-config-dci7
+            - name: DB_HOST_REPLICA2
+              valueFrom:
+                configMapKeyRef:
+                  key: DB_HOST_REPLICA2
                   name: hiedu-k8s-deployment-config-dci7
             - name: DB_PORT
               valueFrom:
