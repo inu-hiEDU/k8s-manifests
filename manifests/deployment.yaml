@@ -132,7 +132,7 @@ spec:
                 configMapKeyRef:
                   key: CRYPTO_IV
                   name: hiedu-k8s-deployment-config-dci7
-          image: yuripbong3/hiedu:0.124.94-pre-dev
+          image: yuripbong3/hiedu:1.1.124
           imagePullPolicy: IfNotPresent
           name: hiedu-sha256-1
           resources:
